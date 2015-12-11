@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/jquery.smschat.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="../css/jquery.smschat.css">
+
+<style>
+	body {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+</style>
+<script type="text/javascript">
+ 
+var rorl = 0;
+$(document).ready(function () {
+	$('#smschat').smschat()
+		.on("send", function(event, txtmsg) {
+			if ( rorl == 0 ) {
+				$('#smschat').smschat('appendRight', txtmsg);
+				rorl = 1 - rorl;
+			}
+			else {
+				$('#smschat').smschat('appendLeft', txtmsg);
+				rorl = 1 - rorl;
+			}
+		});
+});
+
+</script>
+</head>
+ 
+<body>
+<div id='smschat' ></div>
+</body>
+</html>

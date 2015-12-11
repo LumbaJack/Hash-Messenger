@@ -1,0 +1,33 @@
+<div data-role="page" id="chat-page">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
+        <h1 id="chat-header-text">Chat</h1>
+    </div>
+    <style>
+        .ui-content {
+            padding: 0;
+        }
+    </style>
+    <div data-role="content">
+        <div id="smschat">
+            <div class="smschat-wrapper">
+                <div class="container smschat-messages-wrapper">
+                    <div class="smschat-messages"></div>
+                </div>
+                <div class="smschat-input-wrapper">
+                    <div class="smschat-input">
+                        <div id="smschat-attach">
+                            <img id="smschat-attach-button" src="images/attachment.png" style="width:32px">
+                        </div>
+                        <div id="smschat-textarea-wrapper">
+                            <input type="text" id="smschat-textarea" data-role="none" placeholder="Crypti Message">
+                        </div>
+                        <div id="smschat-send">
+                            <img id="smschat-send-button" src="images/send.png" style="width:32px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

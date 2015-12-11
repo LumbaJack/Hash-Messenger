@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./lib/jquery.mobile-1.4/jquery.mobile-1.4.0-rc.1.min.css" type="text/css">
+  <link rel="stylesheet" href="./lib/jquery-mobile-progressbar/tolito-1.0.5.min.css" type="text/css">
+  <link rel="stylesheet" href="./css/jquery.smschat.css" type="text/css">
+  <link rel="stylesheet" href="./css/application.css" type="text/css">
+  <!-- <link rel="stylesheet" href="./css/application-iscroll.css" type="text/css" --> 
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="./lib/jquery/jquery-2.0.3.min.js" ></script>
+  <script type="text/javascript">
+    jQuery.noConflict(); <!-- required for phonegap compatibility -- >        
+  </script>
+  <script type="text/javascript" src="./lib/jquery.mobile-1.4/jquery.mobile-1.4.0-rc.1.min.js" ></script>
+  <script type="text/javascript" src="PushNotification.js"></script>
+  <script type="text/javascript" src="js/cryptico.min.js" ></script>
+  <!--script src="./lib/phonegap-desktop/js/phonegap-desktop.js"></script-->
+  <script type="text/javascript" src="./js/db.js" ></script>
+  <script type="text/javascript" src="./js/sounds.js" ></script>
+  <script type="text/javascript" src="./js/lib/date.js" ></script>
+  <script type="text/javascript" src="./lib/iscroll/iscroll.js" ></script>
+  <script type="text/javascript" src="./lib/jquery-mobile-progressbar/tolito-1.0.5.min.js" ></script>
+  <script type="text/javascript" src="./js/jquery.smschat.js" ></script>
+  <script type="text/javascript" src="./js/application.js" ></script>
+  <script type="text/javascript" src="./js/strophe.min.js" ></script>
+  <script type="text/javascript" src="./js/xmpp.js" ></script>
+  <script type="text/javascript">
+    function onFullyLoaded() {
+       jQuery(document).on("pagebeforechange", function(e, ob) {
+       if (ob.toPage[0].id === "blank-page"  && ob.options.fromPage) {
+            xmpp.connection.disconnect("", true);
+            navigator.app.exitApp();
+       }
+       });
+
+       if(!db.get_eula_accepted()) { 
+          jQuery.mobile.changePage('eula.html',  { transition: "fade", changeHash: false });
+        } else if(!db.get_reginfo()) { 
+          jQuery.mobile.changePage('signup.html', { transition: "fade", changeHash: false });
+        } else {
+          jQuery.mobile.changePage('home.html',{ transition: "fade" });
+	  if ( app.isCordova() ) {
+		pushNotification = window.plugins.pushNotification;
+		pushNotification.register(app.successHandler, app.errorHandler,{"senderID":"215473675714","ecb":"app.onNotificationGCM"});
+	  }
+          xmpp.connect();
+        }
+    }
+    app.initialize();
+  </script>
+</head>
+<body>
+<div data-role="page" id="blank-page"></div>
+
+</body>
+</html>

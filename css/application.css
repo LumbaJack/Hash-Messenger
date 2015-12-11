@@ -1,0 +1,213 @@
+
+* {
+  -webkit-user-select: none;  /* Disable selection/copy of elements when tapping for a long time */
+  -webkit-touch-callout: none; /* Disable touch callouts */
+}
+
+input, textarea {
+  -webkit-user-select: text;  /* Allow selection for input elements */
+}
+
+.content-padded {
+  padding: 10px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#smschat {
+	width: 100%;
+	height: 100%;
+}
+
+.none {
+	display: none;
+}
+
+
+#contacts-ul {
+    z-index:1;
+    width:100%;
+    margin-top: 2em;
+}
+
+#contact-search-spacer {
+    width: 100%;
+    height: 2em;
+}
+
+#scroller {
+    /*
+    position:absolute; z-index:1;
+/*  -webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    /*width:100%;
+    padding:0;
+    */
+}
+
+.home-page_chat-list {
+    width: 100%;
+    height: 100%;
+}
+.title-text {
+    text-align: center;
+    line-height: 2em;
+}
+.title-text img {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+}
+
+.title-text h1 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.profile-img {
+    max-width: 10em;
+    max-height: 10em;
+}
+
+
+.ui-popup-container {
+    width: 90%;
+}
+
+.ui-popup {
+    padding: 1em 2em 1em 2em;
+}
+
+/* Red button theme for JQuery Mobile
+ * - Use data-theme="r" for red versions of the default JQuery Mobile Buttons.
+ ******************************************************************************************/
+ 
+.ui-page-theme-a .ui-btn-r {
+    border: 1px solid #721414;
+    background: #AB2525;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px 1px #000;
+    background-image: -moz-linear-gradient(top, #C54E4E, #AB2525);
+    background-image: -webkit-gradient(linear,left top,left bottom,
+        color-stop(0, #C54E4E),
+        color-stop(1, #AB2525));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#C54E4E', EndColorStr='#AB2525')";
+}
+.ui-page-theme-a .ui-btn-r a.ui-link-inherit {
+    color: #fff;
+}
+.ui-page-theme-a .ui-btn-r:hover {
+    border: 1px solid #6E0000;
+    background: #B64B4B;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px 1px #000;
+    background-image: -moz-linear-gradient(top, 
+        #D47272, 
+        #B64B4B);
+    background-image: -webkit-gradient(linear,left top,left bottom,
+        color-stop(0, #D47272),
+        color-stop(1, #B64B4B));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#D47272', EndColorStr='#B64B4B')";
+}
+.ui-page-theme-a .ui-btn-r:hover a.ui-link-inherit {
+    color: #fff;
+}
+.ui-page-theme-a .ui-btn-r:active {
+    border: 1px solid #772222;
+    background: #C54E4E;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px 1px #000;
+    background-image: -moz-linear-gradient(top, #9E3939, #C54E4E);
+    background-image: -webkit-gradient(linear,left top,left bottom,
+        color-stop(0, #9E3939),
+        color-stop(1, #C54E4E));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#9E3939', EndColorStr='#C54E4E')";
+}
+.ui-page-theme-a .ui-btn-r:active r a.ui-link-inherit {
+    color: #fff;
+}
+
+.ui-page-theme-a .ui-btn-r,
+.ui-page-theme-a .ui-btn-r:hover,
+.ui-page-theme-a .ui-btn-r:active {
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+/**
+ *
+ * Pull down styles
+ *
+ */
+#pullDown, #pullUp {
+    background:#fff;
+    height:40px;
+    line-height:40px;
+    padding:5px 10px;
+    border-bottom:1px solid #ccc;
+    font-weight:bold;
+    font-size:14px;
+    color:#888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+    display:block; float:left;
+    width:40px; height:40px;
+    background:url(../images/pull-icon@2x.png) 0 0 no-repeat;
+    -webkit-background-size:40px 80px; background-size:40px 80px;
+    -webkit-transition-property:-webkit-transform;
+    -webkit-transition-duration:250ms;  
+}
+#pullDown .pullDownIcon {
+    -webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+    -webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+    background-position:0 100%;
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+
+    -webkit-animation-name:loading;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+    from { -webkit-transform:rotate(0deg) translateZ(0); }
+    to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+
+.contact-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 75px;
+    border: 4px solid #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+#invite_contacts-set li a.selected {
+    background-color:#000000;
+    color: #ffffff;
+}

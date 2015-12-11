@@ -1,0 +1,130 @@
+<div data-role="page" id="home-page">
+    <div data-role="header" data-position="fixed">
+        <a href="#" id="home_panel-btn" data-role="button" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left"></a>
+        <div class="title-text"><img src="res/icon/icon.png"></img><h1>Messenger</h1>
+        </div>
+        <button id="newchat" data-role="button" data-icon="plus" data-iconpos="notext">
+            &nbsp;&nbsp;
+        </button>
+    </div>
+    <div data-role="content">
+        <div id="home-page_panels">
+            <div id="home-page_chat-list">
+                <div id="nochats" class="nochats none">
+                    <h1>Use the "+" button to start chating</h1>
+                </div>
+                <div id="with-chats" class="contacts-ul-wrapper">
+                    <ul id='contacts-chat-ul' data-role="listview"></ul>
+                </div>
+            </div>
+            <div id="home-page_profile" class="none">
+                <form>
+                    <div data-role="fieldcontain">
+                        <img id="home_profile-image" src="images/default-user.png" class="profile-img"></img>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="home_name-label" for="home_name">Display Name:</label>
+                        <input type="text" name="name" id="home_name" data-mini="true" >
+                        </input>
+                    </div>
+                </form>
+            </div>
+            <div id="home-page_status" class="none">
+                <form>
+                    <div data-role="fieldcontain">
+                        <label id="home-page_currentstatus-label" for="home-page_currentstatus">Current status:</label>
+                        <textarea id="home-page_currentstatus" ></textarea>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="home-page_status-label" for="home-page_status-listview">Select your new status:</label>
+                        <ul id="home-page_status-listview" data-role="listview" data-inset="true">
+                            <li>
+                                <a href="#" class="newstatus-li">Available</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newstatus-li">Busy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newstatus-li">Away</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newstatus-li">Do not disturb</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newstatus-li">Low battery</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newstatus-li">In a meeting</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newstatus-li">Urgent calls only</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div id="home-page_settings" class="none">
+                <p>
+                    <div data-role="fieldcontain">
+                        <label for="home_chat-history-btn">Chat History:</label>
+                        <select name="home_chat-history-btn" id="home_chat-history-btn" data-theme="a">
+                            <option value="encrypted">Encrypted</option>
+                            <option value="plaintext">Unencrypted</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="home_gen-keys-btn">Encryption Keys:</label>
+                        <button id="home_gen-keys-btn" data-theme="r" data-rel="dialog">
+                            Regenerate
+                        </button>
+                        <a id="gen_keys_prompt-link" href="gen_keys_prompt.html" data-rel="dialog" data-transition="pop" class="none"></a>
+                    </div>
+                </p>
+            </div>
+            <div id="home-page_help" class="none">
+                <p>
+                    Help goes here
+                </p>
+            </div>
+            <div id="home-page_about" class="none">
+                <p>
+                    About hash messenger stuff goes here
+                </p>
+            </div>
+        </div>
+    </div>
+    <div data-role="panel" id="home-page_left-panel" data-theme="a">
+        <ul data-role="listview" data-icon="false" data-global-nav="demos" class="jqm-list">
+            <!--
+            <li data-role="list-divider">
+            Menu
+            </li>
+            <li>
+            <a href="./">Home</a>
+            </li>
+            <li data-role="list-divider">
+            Getting started
+            </li>
+            -->
+            <li data-filtertext="">
+                <a id="home-page_chats-btn" href="#" class="panel-link" panel-id="home-page_chat-list" >Chats</a>
+            </li>
+            <li data-filtertext="">
+                <a id="home-page_profile-btn" href="#" class="panel-link" panel-id="home-page_profile" >Profile</a>
+            </li>
+            <li data-filtertext="">
+                <a id="home-page_status-btn" href="#" class="panel-link" panel-id="home-page_status" >Status</a>
+            </li>
+            <li data-filtertext="">
+                <a id="home-page_settings-btn" href="#" class="panel-link" panel-id="home-page_settings" >Settings</a>
+            </li>
+            <li data-filtertext="">
+                <a id="home-page_help-btn"  href="#" class="panel-link" panel-id="home-page_help" >Help</a>
+            </li>
+            <li data-filtertext="">
+                <a id="home-page_about-btn" href="#" class="panel-link" panel-id="home-page_about" >About</a>
+            </li>
+    </div><!-- /panel -->
+</div>
+</div> 
