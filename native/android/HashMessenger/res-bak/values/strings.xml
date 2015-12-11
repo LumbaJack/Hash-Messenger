@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hash Messenger</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_contact_list">Contacts</string>
+    <string name="title_activity_contact_blocked_list">Contacts</string>
+    <string name="accept">Accept</string>
+    <string name="apptitle">Hash Messenger</string>
+    <string name="contact_photo_description">Contact photo</string>
+    <string name="no_messages">No messages</string>
+    <string name="eula_title">EULA</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="title_activity_chat_list">ChatListActivity</string>
+    <string name="agree_continue">Agree and continue</string>
+    <string name="description">Encrypted mobile messaging with friend all over the world. Nobody can\'t read the messages not even you.</string>
+    <string name="welcome">Welcome to Hash Messenger</string>
+    <string name="term_y_cond">Terms and conditions</string>
+    <string name="signup_inst">We need to verify your phone, Hash messenger will send a one time SMS to your phone number. Note: maybe carrier apply</string>
+    <string name="signup_inst1">Please confirm your country code and enter your phone number</string>
+    <string name="plus">+</string>
+    <string name="signup_title">Verify your phone number</string>
+    <string name="invite_dialog_title">Send invitation by</string>
+    <string name="invite_message_subject">Install HashMessenger now!</string>
+    <string name="invite_message_body">Do be stupid, installs HashMessenger now!</string>
+    <string name="listFoundAllContactsZero">No contacts</string>
+
+    <string-array name="invite_dialog_methods">
+        <item>Email</item>
+        <item>Text</item>
+    </string-array>
+
+    <string name="enter_smscode">Please enter your code</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="pref_help">Help</string>
+    <string name="pref_faq">FAQ</string>
+    <string name="pref_system_status">System status</string>
+    <string name="pref_contact_us">Contact us</string>
+    <string name="pref_about">About</string>
+    <string name="pref_contacts">Contacts</string>
+    <string name="pref_contacts_invite">Tell a friend</string>
+    <string name="pref_contacts_blocked">Blocked contacts</string>
+    <string name="pref_contacts_showall">Show all contacts</string>
+    <string name="pref_contacts_showall_summary">Enable to also use hidden contacts</string>
+    <string name="pref_profile">Profile</string>
+    <string name="pref_account">Account</string>
+    <string name="pref_account_payment_info">Payment Info</string>
+    <string name="pref_account_network_usage">Network Usage</string>
+    <string name="pref_account_change_number">Change Number</string>
+    <string name="pref_account_delete_account">Delete my account</string>
+    <string name="pref_chat">Chat Settings</string>
+    <string name="pref_chat_enter_crlf">Enter is send</string>
+    <string name="pref_chat_enter_crlf_summary">Enter key will add a new line</string>
+    <string name="pref_chat_media_auto_download">Media auto-download</string>
+    <string name="pref_chat_font_size">Font size:</string>
+    <string name="pref_chat_wallpaper">Wallpaper</string>
+    <string name="pref_chat_backup">Backup conversations</string>
+    <string name="pref_chat_deleteall">Delete all conversations</string>
+    <string name="pref_chat_clearall">Clear all conversations</string>
+    <string name="pref_notifications">Notifications</string>
+    <string name="pref_notifications_play_tone">Conversation tones</string>
+    <string name="pref_notifications_message_category">Message Notifications</string>
+    <string name="pref_notifications_play_tone_summary">Play sounds for incoming and outgoing messages</string>
+    <string name="pref_notifications_tone">Notification tone</string>
+    <string name="pref_notifications_tone_summary">Select a sound to play for a new notification message</string>
+    <string name="pref_notifications_contact_tone">Contact ringtone</string>
+    <string name="pref_notifications_contact_tone_summary">Use contact\'s custom ringtone as the notification ringtone</string>
+    <string name="pref_notifications_vibrate">Vibrate</string>
+    <string name="pref_notifications_vibrate_summary">Vibrate device when new message arrives while application is running</string>
+    <string name="pref_notifications_popup">Popup notification</string>
+    <string name="pref_notifications_popup_summary">No popup</string>
+    <string name="pref_notifications_light">Light</string>
+    <string name="pref_notifications_light_summary">Choose a color to blink the notification light when a new message is received.</string>
+
+    <string-array name="pref_notifications_light">
+        <item name="1">None</item>
+        <item name="2">White</item>
+        <item name="3">Red</item>
+        <item name="4">Yellow</item>
+        <item name="5">Green</item>
+        <item name="6">Cyan</item>
+        <item name="7">Blue</item>
+        <item name="8">Purple</item>
+    </string-array>
+    <string-array name="pref_notifications_light_values">
+        <item name="1">#000000</item>
+        <item name="2">#FFFFFF</item>
+        <item name="3">#FF0000</item>
+        <item name="4">#FFFF00</item>
+        <item name="5">#008000</item>
+        <item name="6">#00FFFF</item>
+        <item name="7">#0000FF</item>
+        <item name="8">#800080</item>
+    </string-array>
+
+    <string name="genkeys_instrucctions">We need to generate random data, we are going to use this data to generate the public and private. Please shake the phone in any direction until the progress bar is full and you hear a sound.</string>
+    <string name="xaxis">X-Axis</string>
+    <string name="yaxis">Y-Axis</string>
+    <string name="zaxis">Z-Axis</string>
+    <string name="genkeys_title">Generation of Keys</string>
+    <string name="title_activity_contact_viewer">Contact Viewer</string>
+    <string name="use_default">Default</string>
+    <string name="block_contact">Block</string>
+    <string name="unblock_contact">Unblock</string>
+</resources>

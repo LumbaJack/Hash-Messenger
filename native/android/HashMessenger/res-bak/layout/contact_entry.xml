@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/widget60"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:id="@+id/contactEntryText"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:text="@+id/contactEntryText"
+            android:textSize="8pt" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/contactImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/contact_photo_description" >
+        </ImageView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen android:title="@string/pref_help" >
+        <Preference android:title="@string/pref_faq" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.hashmessenger.com/faq" />
+        </Preference>
+        <Preference android:title="@string/pref_system_status" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.hashmessenger.com/status" />
+        </Preference>
+        <Preference android:title="@string/pref_contact_us" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+    </PreferenceScreen>
+
+    <Preference android:title="@string/pref_about" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.hashmessenger.com/about" />
+    </Preference>
+
+    <PreferenceScreen android:title="@string/pref_contacts" >
+        <Preference android:title="@string/pref_contacts_invite" >
+            <intent android:action="com.midas.hashmessenger.ContactListActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_contacts_blocked" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.midas.hashmessenger.ContactBlockedListActivity"
+                android:targetPackage="com.midas.hashmessenger" />
+        </Preference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_contacts_showall"
+            android:summary="@string/pref_contacts_showall_summary"
+            android:title="@string/pref_contacts_showall" >
+        </CheckBoxPreference>
+    </PreferenceScreen>
+
+    <Preference android:title="@string/pref_profile" >
+        <intent android:action="com.midas.hashmessenger.ChatActivity" />
+    </Preference>
+
+    <PreferenceScreen android:title="@string/pref_account" >
+        <Preference android:title="@string/pref_account_payment_info" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_account_network_usage" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_account_change_number" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_account_delete_account" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/pref_chat" >
+        <Preference android:title="@string/pref_chat_history" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.midas.hashmessenger.activities.HistorySettingsActivity"
+                android:targetPackage="com.midas.hashmessenger" />
+        </Preference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_chat_enter_crlf"
+            android:summary="@string/pref_chat_enter_crlf_summary"
+            android:title="@string/pref_chat_enter_crlf" >
+        </CheckBoxPreference>
+
+        <Preference android:title="@string/pref_chat_media_auto_download" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_chat_font_size" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+
+        <Preference android:title="@string/pref_chat_wallpaper" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_chat_backup" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_chat_deleteall" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+        <Preference android:title="@string/pref_chat_clearall" >
+            <intent android:action="com.midas.hashmessenger.ChatActivity" />
+        </Preference>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/pref_notifications" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_notifications_play_tone"
+            android:summary="@string/pref_notifications_play_tone_summary"
+            android:title="@string/pref_notifications_play_tone" >
+        </CheckBoxPreference>
+
+        <PreferenceCategory android:title="@string/pref_notifications_message_category" >
+            <Preference
+                android:summary="@string/pref_notifications_tone"
+                android:title="@string/pref_notifications_tone_summary" >
+                <intent android:action="com.midas.hashmessenger.ChatActivity" />
+            </Preference>
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="pref_notifications_contact_tone"
+                android:summary="@string/pref_notifications_contact_tone_summary"
+                android:title="@string/pref_notifications_contact_tone" >
+            </CheckBoxPreference>
+
+            <Preference
+                android:summary="@string/pref_notifications_vibrate_summary"
+                android:title="@string/pref_notifications_vibrate" >
+                <intent android:action="com.midas.hashmessenger.ChatActivity" />
+            </Preference>
+            <Preference
+                android:summary="@string/pref_notifications_popup_summary"
+                android:title="@string/pref_notifications_popup" >
+                <intent android:action="com.midas.hashmessenger.ChatActivity" />
+            </Preference>
+
+            <ListPreference
+                android:entries="@array/pref_notifications_light"
+                android:entryValues="@array/pref_notifications_light_values"
+                android:key="pref_notifications_light"
+                android:summary="@string/pref_notifications_light_summary"
+                android:title="@string/pref_notifications_light" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+</PreferenceScreen>

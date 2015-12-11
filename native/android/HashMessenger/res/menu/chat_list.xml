@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/newchat"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/newchat"/>
+    <item
+        android:id="@+id/showcontacts"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/title_activity_contact_list"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menustatus"/>
+    <item
+        android:id="@+id/action_addchat"
+        android:title="+"
+        yourapp:showAsAction="ifRoom"/>
+</menu>

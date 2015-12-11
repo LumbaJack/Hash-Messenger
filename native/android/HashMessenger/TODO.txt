@@ -1,0 +1,16 @@
+###
+### Put todo items here, separated by blank lines
+### When todo items are complete move them under the release line
+### and we'll use that to create out changelog
+###
+### If you are working on something that is going to take a few days tell other developers or put your name next to it
+
+* add "encrypted" column to Messages table to enable per message encrypted/cleartext option (EZ)
+
+
+Release 1.0
+===========
+
+* Fixed encrypted messages appearing in chat window
+
+* Fixed new message notices when returning to chat list window

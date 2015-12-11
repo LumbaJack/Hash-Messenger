@@ -1,0 +1,332 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+     <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">0dp</item>
+        <item name="android:windowBackground">@color/offwhite</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ Base Styles +++++++++++++++++++++ -->
+
+
+    <!-- ListView style -->
+    <style name="CustomListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@drawable/line</item>
+        <item name="android:dividerHeight">@dimen/divider_size</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="CustomButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/tex_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/ui_text_selector</item>
+    </style>
+
+    <!-- EditText style -->
+    <style name="CustomEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/tex_size_xlarge</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/dim_10</item>
+    </style>
+
+    <!-- CheckBox style -->
+    <style name="CustomCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/tex_size_large</item>
+        <item name="android:textColor">@color/gray_35</item>
+    </style>
+
+    <!-- RadioButton style -->
+    <style name="CustomRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">@dimen/tex_size_large</item>
+        <item name="android:textColor">@color/gray_35</item>
+    </style>
+
+    <!-- ProgressBar style -->
+    <style name="CustomProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_height">@dimen/progressbar_height</item>
+        <item name="android:minHeight">@dimen/progressbar_height</item>
+    </style>
+
+    <!-- SeekBar style -->
+    <style name="CustomSeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">@dimen/seekbar_height</item>
+        <item name="android:minHeight">@dimen/seekbar_height</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Base Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Green Styles +++++++++++++++++++++ -->
+    <!-- Green button Style -->
+    <style name="Button_Green" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_green</item>
+    </style>
+
+    <!-- Green EditText style -->
+    <style name="EditText_Green" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_green</item>
+        <item name="android:textColor">@drawable/ui_text_selector_green</item>
+    </style>
+
+    <!-- Green CheckBox style -->
+    <style name="CheckBox_Green" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_green</item>
+    </style>
+
+    <!-- Green RadioButton style -->
+    <style name="RadioButton_Green" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_green</item>
+    </style>
+
+    <!-- Green ProgressBar style -->
+    <style name="ProgressBar_Green" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_green</item>
+    </style>
+
+    <!-- Green SeekBar style -->
+    <style name="SeekBar_Green" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_green</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_green</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Green Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Red Styles +++++++++++++++++++++ -->
+    <!-- Red button Style -->
+    <style name="Button_Red" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_red</item>
+    </style>
+
+    <!-- Red EditText style -->
+    <style name="EditText_Red" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_red</item>
+        <item name="android:textColor">@drawable/ui_text_selector_red</item>
+    </style>
+
+    <!-- Red CheckBox style -->
+    <style name="CheckBox_Red" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_red</item>
+    </style>
+
+    <!-- Red RadioButton style -->
+    <style name="RadioButton_Red" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_red</item>
+    </style>
+
+    <!-- Red ProgressBar style -->
+    <style name="ProgressBar_Red" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_red</item>
+    </style>
+
+    <!-- Red SeekBar style -->
+    <style name="SeekBar_Red" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_red</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_red</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Red Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Blue Styles +++++++++++++++++++++ -->
+    <!-- Blue button Style -->
+    <style name="Button_Blue" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_blue</item>
+    </style>
+
+    <!-- Blue EditText style -->
+    <style name="EditText_Blue" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_blue</item>
+        <item name="android:textColor">@drawable/ui_text_selector_blue</item>
+    </style>
+
+    <!-- Blue CheckBox style -->
+    <style name="CheckBox_Blue" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_blue</item>
+    </style>
+
+    <!-- Blue RadioButton style -->
+    <style name="RadioButton_Blue" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_blue</item>
+    </style>
+
+    <!-- Blue ProgressBar style -->
+    <style name="ProgressBar_Blue" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_blue</item>
+    </style>
+
+    <!-- Blue SeekBar style -->
+    <style name="SeekBar_Blue" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_blue</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_blue</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Blue Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Lilac Styles +++++++++++++++++++++ -->
+    <!-- Lilac button Style -->
+    <style name="Button_Lilac" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_lilac</item>
+    </style>
+
+    <!-- Lilac EditText style -->
+    <style name="EditText_Lilac" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_lilac</item>
+        <item name="android:textColor">@drawable/ui_text_selector_lilac</item>
+    </style>
+
+    <!-- Lilac CheckBox style -->
+    <style name="CheckBox_Lilac" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_lilac</item>
+    </style>
+
+    <!-- Lilac RadioButton style -->
+    <style name="RadioButton_Lilac" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_lilac</item>
+    </style>
+
+    <!-- Lilac ProgressBar style -->
+    <style name="ProgressBar_Lilac" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_lilac</item>
+    </style>
+
+    <!-- Lilac SeekBar style -->
+    <style name="SeekBar_Lilac" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_lilac</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_lilac</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Lilac Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Orange Styles +++++++++++++++++++++ -->
+    <!-- Orange button Style -->
+    <style name="Button_Orange" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_orange</item>
+    </style>
+
+    <!-- Orange EditText style -->
+    <style name="EditText_Orange" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_orange</item>
+        <item name="android:textColor">@drawable/ui_text_selector_orange</item>
+    </style>
+
+    <!-- Orange CheckBox style -->
+    <style name="CheckBox_Orange" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_orange</item>
+    </style>
+
+    <!-- Orange RadioButton style -->
+    <style name="RadioButton_Orange" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_orange</item>
+    </style>
+
+    <!-- Orange ProgressBar style -->
+    <style name="ProgressBar_Orange" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_orange</item>
+    </style>
+
+    <!-- Orange SeekBar style -->
+    <style name="SeekBar_Orange" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_orange</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_orange</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Orange Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Purple Styles +++++++++++++++++++++ -->
+    <!-- Purple button Style -->
+    <style name="Button_Purple" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_purple</item>
+    </style>
+
+    <!-- Purple EditText style -->
+    <style name="EditText_Purple" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_purple</item>
+        <item name="android:textColor">@drawable/ui_text_selector_purple</item>
+    </style>
+
+    <!-- Purple CheckBox style -->
+    <style name="CheckBox_Purple" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_purple</item>
+    </style>
+
+    <!-- Purple RadioButton style -->
+    <style name="RadioButton_Purple" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_purple</item>
+    </style>
+
+    <!-- Purple ProgressBar style -->
+    <style name="ProgressBar_Purple" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_purple</item>
+    </style>
+
+    <!-- Purple SeekBar style -->
+    <style name="SeekBar_Purple" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_purple</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_purple</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Purple Styles +++++++++++++++++++++ -->
+
+
+    <!-- +++++++++++++++++++++ Yellow Styles +++++++++++++++++++++ -->
+    <!-- Yellow button Style -->
+    <style name="Button_Yellow" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_yellow</item>
+    </style>
+
+    <!-- Yellow EditText style -->
+    <style name="EditText_Yellow" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_yellow</item>
+        <item name="android:textColor">@drawable/ui_text_selector_yellow</item>
+    </style>
+
+    <!-- Yellow CheckBox style -->
+    <style name="CheckBox_Yellow" parent="CustomCheckBox">
+        <item name="android:button">@drawable/ui_checkbox_yellow</item>
+    </style>
+
+    <!-- Yellow RadioButton style -->
+    <style name="RadioButton_Yellow" parent="CustomRadioButton">
+        <item name="android:button">@drawable/ui_radio_yellow</item>
+    </style>
+
+    <!-- Yellow ProgressBar style -->
+    <style name="ProgressBar_Yellow" parent="CustomProgressBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_yellow</item>
+    </style>
+
+    <!-- Yellow SeekBar style -->
+    <style name="SeekBar_Yellow" parent="CustomSeekBar">
+        <item name="android:progressDrawable">@drawable/ui_progress_yellow</item>
+        <item name="android:thumb">@drawable/ui_seekbar_handel_yellow</item>
+    </style>
+
+    <!-- +++++++++++++++++++++ End of Yellow Styles +++++++++++++++++++++ -->
+    
+    
+
+</resources>

@@ -1,0 +1,9 @@
+.DS_Store
+android/HashMessenger/bin/**/*
+android/HashMessenger/gen/**/*
+android/google-play-services_lib/bin/**/*
+android/google-play-services_lib/gen/**/*
+android/asmackx/bin/**/*
+android/asmackx/gen/**/*
+android/support/v7/appcompat/bin/**/*
+android/support/v7/appcompat/gen/**/*
